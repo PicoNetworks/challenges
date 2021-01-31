@@ -51,8 +51,12 @@ var postAuthor = [];
 <div class="header-titles">
 <div class="site-title faux-heading"><a href="/">Maas Cookies!</a></div><div class="site-description">Just another WordPress site</div>
 </div>
-<div class="PicoSignal">Welcome Back!
+<div class="PicoSignal">Welcome Back! 
 </div>
+<button class="PicoRule">Registration
+</button>
+<button class="PicoPlan_4zkg4763">Monetization
+</button>
 <button class="toggle nav-toggle mobile-nav-toggle" data-toggle-target=".menu-modal" data-toggle-body-class="showing-menu-modal" aria-expanded="false" data-set-focus=".close-nav-toggle">
 <span class="toggle-inner">
 <span class="toggle-icon">
