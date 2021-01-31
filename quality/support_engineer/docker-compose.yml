@@ -10,6 +10,8 @@ services:
     image: php:apache
     expose:
       - 80
+    ports:
+      - "80:80"
     volumes:
       - ./wrapper:/var/www/html/
     environment:
