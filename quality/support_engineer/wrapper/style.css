@@ -295,6 +295,8 @@ main {
 	display: block;
 }
 
+div.PicoSignal[data-pico-status="anonymous"]{display:none}
+
 h1,
 h2,
 h3,
