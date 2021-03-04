@@ -1,6 +1,6 @@
 CREATE TABLE IF NOT EXISTS customers(
-   customer_id              VARCHAR(32) NOT NULL 
-  ,customer_unique_id       VARCHAR(32) NOT NULL PRIMARY KEY 
+   customer_id              VARCHAR(32) NOT NULL PRIMARY KEY 
+  ,customer_unique_id       VARCHAR(32) NOT NULL
   ,customer_zip_code_prefix INTEGER  NOT NULL
   ,customer_city            VARCHAR(32) NOT NULL
   ,customer_state           VARCHAR(2) NOT NULL
@@ -38,11 +38,10 @@ CREATE TABLE IF NOT EXISTS sellers(
   ,seller_state           VARCHAR(2) NOT NULL
 );
 
-
 CREATE TABLE IF NOT EXISTS order_items(
    order_id            VARCHAR(32) references orders(order_id)
-  ,order_item_id       INTEGER  NOT NULL
-  ,product_id          VARCHAR(32) references products(order_id)
+  ,order_item_id       INTEGER  NOT NULL 
+  ,product_id          VARCHAR(32) references products(product_id)
   ,seller_id           VARCHAR(32) NOT NULL
   ,shipping_limit_date TIMESTAMP NOT NULL
   ,price               NUMERIC(7,2) NOT NULL
