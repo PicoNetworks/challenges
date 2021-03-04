@@ -9,22 +9,24 @@ services:
       - ./hooks:/usr/local/bin/before-notebook.d/
     ports:
       - "8888:8888"
-  mariadb:
-    image: mariadb:10.5
-    environment:
-      - MYSQL_ROOT_PASSWORD=secret
-      - MYSQL_DATABASE=olist
-    volumes:
-      - ./data/mysql:/var/lib/mysql
-    expose:
-      - "3306"
-    ports:
-      - "3306:3306"
+        #  mariadb:
+        #    image: mariadb:10.5
+        #    environment:
+        #      - MYSQL_ROOT_PASSWORD=secret
+        #      - MYSQL_DATABASE=olist
+        #    volumes:
+        #      - ./data/mysql:/var/lib/mysql
+        #    expose:
+        #      - "3306"
+        #    ports:
+        #      - "3306:3306"
   postgres:
     image: postgres:9.6-alpine
     environment:
       - POSTGRES_PASSWORD=secret
       - POSTGRES_DB=olist
+      - POSTGRES_USER=postgres
+
     volumes:
       - ./data/postgres:/var/lib/postgresql/data
     expose:
