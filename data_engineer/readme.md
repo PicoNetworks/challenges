@@ -48,6 +48,6 @@ Write the SQL statements for creating the schema to the `sql/schema.sql` file.
 
 Open `challenge.ipynb` in Jupyter Lab and follow the instructions.
 
-Fork the repo and submit a PR with your solution.
+Fork the repo and send us a link to your GitHub account as your submission.
 
 ### Have fun!
