@@ -36,8 +36,9 @@ jobs:
         env:
           CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
           NODE_ENV: development
+        working-directory: ./em
         run: |
-          working-directory: ./em
+          
            ./cc-test-reporter before-build --debug
            npm run test:coverage
            npm run coverage --debug
