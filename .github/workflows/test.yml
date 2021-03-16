@@ -21,9 +21,9 @@ jobs:
         uses: actions/cache@v2
         with:
           path: ~/.npm
-          key: npm-${{ hashFiles('package.json') }}
+          key: npm-install-${{ hashFiles('package.json') }}
           restore-keys: |
-            npm-
+            npm-install-
             
       - run: npm install
 
