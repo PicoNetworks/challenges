@@ -21,7 +21,7 @@ jobs:
         uses: actions/cache@v2
         with:
           path: ~/.npm
-          key: npm-${{ hashFiles('em/package.json') }}
+          key: npm-${{ hashFiles('package.json') }}
           restore-keys: |
             npm-
             
@@ -37,6 +37,7 @@ jobs:
           CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
           NODE_ENV: development
         run: |
+          working-directory: ./em
            ./cc-test-reporter before-build --debug
            npm run test:coverage
            npm run coverage --debug
