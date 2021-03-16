@@ -17,13 +17,13 @@ jobs:
         with:
           node-version: '14.15.1'
 
-      - name: Cache node modules
-        uses: actions/cache@v2
-        with:
-          path: ~/.npm
-          key: npm-install-${{ hashFiles('package.json') }}
-          restore-keys: |
-            npm-install-
+      # - name: Cache node modules
+      #   uses: actions/cache@v2
+      #   with:
+      #     path: ~/.npm
+      #     key: npm-${{ hashFiles('package.json') }}
+      #     restore-keys: |
+      #       npm-
             
       - run: npm install
 
