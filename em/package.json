@@ -7,7 +7,7 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "coverage": "./cc-test-reporter after-build --coverage-input-type lcov --exit-code $?",
+    "coverage": "./cc-test-reporter after-build --coverage-input-type lcov --exit-code $?"
   },
   "keywords": [],
   "author": "",
