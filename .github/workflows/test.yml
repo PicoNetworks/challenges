@@ -1,0 +1,42 @@
+name: Test
+on:
+  push:
+    branches-ignore:
+      - master
+      - staging
+      - prod
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '14.15.1'
+
+      - name: Cache node modules
+        uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: npm-${{ hashFiles('package.json') }}
+          restore-keys: |
+            npm-
+            
+      - run: npm install
+
+      - name: Setup Code Climate test-reporter
+        run: |
+          curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+          chmod +x ./cc-test-reporter
+
+      - name: Run tests and report coverage
+        env:
+          CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
+          NODE_ENV: development
+        run: |
+           ./cc-test-reporter before-build --debug
+           npm run test:coverage
+           npm run coverage --debug

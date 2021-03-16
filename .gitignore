@@ -8,3 +8,9 @@ __pycache__/
 data/
 *.db
 *.log
+
+.DS_Store
+
+node_modules
+.next
+package-lock.json

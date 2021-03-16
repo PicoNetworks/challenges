@@ -1,0 +1,66 @@
+version: "2"
+checks:
+  argument-count:
+    enabled: true
+    config:
+      threshold: 4
+  method-complexity:
+    enabled: true
+    config:
+        threshold: 20
+  method-count:
+    enabled: true
+    config:
+      threshold: 20
+  method-lines:
+    config:
+      threshold: 200
+  file-lines:
+    enabled: true
+    config:
+      threshold: 500
+  complex-logic:
+    config:
+      threshold: 10
+  identical-code:
+    config:
+      threshold: 30
+  similar-code:
+    config:
+      threshold: 100
+  duplicate-code:
+    config:
+      threshold: 100
+  return-statements:
+    config:
+      threshold: 50
+plugins:
+  eslint:
+    enabled: true
+    channel: "eslint-6"
+    checks:
+      prettier/prettier:
+        enabled: false
+  nodesecurity:
+    enabled: true
+  csslint:
+    enabled: true
+exclude_patterns:
+  - .github
+  - .jest
+  - .storybook
+  - .vscode
+  - javascript
+  - python
+  - quality
+  - ".*rc"
+  - ".*ignore"
+  - "**/*.yml"
+  - "**/*.md"
+  - "**/*.json"
+  - "**/*.env"
+  - "jest.config.js"
+  - "commitlint.config.js"
+  - "next.config.js"
+  - "**/*.po.js"
+  - "**/*.test.js"
