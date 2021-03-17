@@ -15,6 +15,7 @@ export default function Form() {
         //     method: 'POST',
         // })
 
+        /Should this be hard coded like this?
         const res = await fetch(
             'https://enx2y83d8t3c9.x.pipedream.net/',
             {
