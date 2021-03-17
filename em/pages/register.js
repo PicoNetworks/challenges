@@ -15,7 +15,20 @@ export default function Form() {
         //     method: 'POST',
         // })
 
-        const result = await res.json()
+        const res = await fetch(
+            'https://enx2y83d8t3c9.x.pipedream.nett/',
+            {
+              body: JSON.stringify({
+                name: event.target.name.value
+              }),
+              headers: {
+                'Content-Type': 'application/json'
+              },
+              method: 'POST'
+            }
+          )
+
+        const result = await res.json();
         return result
         // result.user => 'Ada Lovelace'
     }
