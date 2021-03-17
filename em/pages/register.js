@@ -16,7 +16,7 @@ export default function Form() {
         // })
 
         const res = await fetch(
-            'https://enx2y83d8t3c9.x.pipedream.nett/',
+            'https://enx2y83d8t3c9.x.pipedream.net/',
             {
               body: JSON.stringify({
                 name: event.target.name.value
