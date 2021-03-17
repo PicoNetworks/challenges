@@ -9,7 +9,7 @@
     "start": "next start",
     "test": "NODE_ENV=test jest",
     "coverage": "./cc-test-reporter after-build --coverage-input-type lcov --exit-code $?",
-    "test:coverage": "NODE_ENV=test jest --collectCoverage --passWithNoTests"
+    "test:coverage": "NODE_ENV=test jest --collectCoverage"
   },
   "keywords": [],
   "author": "",
