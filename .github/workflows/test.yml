@@ -30,6 +30,7 @@ jobs:
 
       - name: npm install
         working-directory: ./em
+        run: npm install
             
 
       - name: Setup Code Climate test-reporter
