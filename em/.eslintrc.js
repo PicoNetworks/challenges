@@ -18,9 +18,19 @@ module.exports = {
                 paths: ['src'],
                 extensions: ['.js', '.jsx', '.ts', '.tsx'],
             },
+            includes: {
+                paths: ['./_includes'],
+            },
         },
     },
     rules: {
+        'react/prop-types': 'off',
+        'react/destructuring-assignment': 'off',
+        'no-await-in-loop': 'off',
+        'jsx-a11y/anchor-is-valid': 'off',
+        'global-require': 'off',
+        'import/no-dynamic-require': 'off',
+
         camelcase: [
             'error',
             {
@@ -47,12 +57,7 @@ module.exports = {
         'react/jsx-indent': ['error', 4],
         'react/jsx-indent-props': ['error', 4],
         semi: ['error', 'never'],
-        // 'react/jsx-props-no-spreading': [
-        //     'error',
-        //     {
-        //         explicitSpread: 'ignore',
-        //     },
-        // ],
+
         'react/jsx-props-no-spreading': 0,
         'react/no-did-update-set-state': 0,
         'react/forbid-prop-types': 0,

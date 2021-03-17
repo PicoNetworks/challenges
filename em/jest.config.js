@@ -6,10 +6,10 @@ module.exports = {
     ],
     // The directory where Jest should output its coverage files
     coverageDirectory: 'coverage',
-    coveragePathIgnorePatterns: [ '/node_modules/', '.jest/enzyme.js', 'commitlint.config.js', 'next.config.js' ],
+    coveragePathIgnorePatterns: ['/node_modules/', '.jest/enzyme.js', 'commitlint.config.js', 'next.config.js'],
     // The maximum amount of workers used to run your tests.
     maxWorkers: '80%',
-    moduleFileExtensions: [ 'js', 'json', 'scss', 'css' ],
+    moduleFileExtensions: ['js', 'json', 'scss', 'css'],
 
     moduleNameMapper: {
         '^utils(.*)$': '<rootDir>/src/utils$1',
@@ -17,15 +17,15 @@ module.exports = {
         '^components(.*)$': '<rootDir>/src/components$1',
         '^containers(.*)$': '<rootDir>/src/containers$1',
         '\\.(css|less|sass|scss)$': '<rootDir>/__mocks__/styleMock.js',
-        '\\.(gif|ttf|eot|svg|png)$': '<rootDir>/__mocks__/fileMock.js'
+        '\\.(gif|ttf|eot|svg|png)$': '<rootDir>/__mocks__/fileMock.js',
     },
-    setupFilesAfterEnv: [ '<rootDir>/.jest/enzyme.js' ],
-    snapshotSerializers: [ 'enzyme-to-json/serializer' ],
+    setupFilesAfterEnv: ['<rootDir>/.jest/enzyme.js'],
+    snapshotSerializers: ['enzyme-to-json/serializer'],
     testEnvironment: 'jsdom',
-    testMatch: [ '**/test.(js)', '**/*.test.(js)', '**/?(*.)+(spec|test).js' ],
-    testPathIgnorePatterns: [ '<rootDir>/.next/', '<rootDir>/node_modules/', '/__tests__/automated/' ],
+    testMatch: ['**/test.(js)', '**/*.test.(js)', '**/?(*.)+(spec|test).js'],
+    testPathIgnorePatterns: ['<rootDir>/.next/', '<rootDir>/node_modules/', '/__tests__/automated/'],
     transform: {
-        '^.+\\.js$': 'babel-jest'
+        '^.+\\.js$': 'babel-jest',
     },
-    verbose: true
+    verbose: true,
 }
