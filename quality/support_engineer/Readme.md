@@ -1,17 +1,17 @@
-##Quality Support Engineer Take Home Challenge!
+## Quality Support Engineer Take Home Challenge!
 
 Check out [Pico Help](https://help.trypico.com) for advice and support for using Pico. This challenge is designed to familarize you with Pico.
 
-####Tasks:
+#### Tasks:
 1 Get the sample test site running locally on your computer.
   
-Add `wrapper.local` as a local host to your `/etc/hosts`. 
+Add `wrapper.local` as a local host to your `/etc/hosts` aliasing to localhost and 127.0.0.1
 Run the local site container running using `docker-compose`. You may need to install Docker Desktop
 Navigate to `http://wrapper.local` in your web broswer and ensure you can view the support site.
 
 2 Load the `Pico Gadget`!    
 
-*    Review installation [instructions](https://help.trypico.com/en/articles/3199263-installing-pico-on-your-website) for the manual installation of the Pico Gadget
+* Review installation [instructions](https://help.trypico.com/en/articles/3199263-installing-pico-on-your-website) for the manual installation of the Pico Gadget
 * Modify `header.php` so it loads the Gadget code from Pico's staging environment: `https://gadget.staging.pico.tools/wrapper.min.js`
 * Fix any console errors about the publisher ID not being found by editing `docker-compose.yml` to use publisher `c9298a6f-566d-4507-9def-116384264538`
 * When you refresh the site you should see the gadget on the site as it will popup on the screen.
@@ -37,3 +37,4 @@ https://help.trypico.com/en/articles/2906365-custom-triggers
 
 ![img_1.png](img_1.png)
 
+### Have fun!

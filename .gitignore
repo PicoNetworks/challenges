@@ -6,6 +6,7 @@ __pycache__/
 
 # data
 data/
+local/
 *.db
 *.log
 
@@ -17,3 +18,4 @@ package-lock.json
 
 coverage
 
+.vscode/
