@@ -31,6 +31,9 @@ jobs:
         working-directory: ./em
         run: npm install
             
+      - name: Lint
+        working-directory: ./em
+        run: npm run lint
 
       - name: Setup Code Climate test-reporter
         working-directory: ./em
