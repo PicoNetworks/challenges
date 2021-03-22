@@ -11,5 +11,5 @@
 
 ## Extra credit: 
 Use ACM and host the solution over https.  
-Use Terraform Cloud free tier for your IaC solution.
+Use Terraform Cloud free tier for your IaC solution.  
 Use blue/green migrations in ECS.
