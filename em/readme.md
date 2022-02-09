@@ -11,4 +11,4 @@ What feedback would you have for this engineer?
 What would be the appropriate time and place to give that feedback?
 
 _Delivery_  
-Please write up your feedback answer as if you were delivering it to the actual engineer and commenting on the actual pull request. When you are ready to send your written answers please share a google doc or something similar with joey@trypico.com. 
+Please write up your feedback answer as if you were delivering it to the actual engineer and commenting on the actual pull request. When you are ready to send your written answers please share a google doc or something similar with michelle@trypico.com. 
